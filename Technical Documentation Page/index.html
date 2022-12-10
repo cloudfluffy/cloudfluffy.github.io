@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Discrete Math Mathematical Statements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Discrete Math</header>
+      <ul>
+        <li><a class="nav-link" href="#Mathematical_Statements">Mathematical Statements</a></li>
+        <li><a class="nav-link" href="#Logical_Connectives">Logical Connectives</a></li>
+        <li><a class="nav-link" href="#Inverse_Converse_Contrapositive_and_Negation">Inverse, Converse, Contrapositive, and Negation</a></li>
+        <li><a class="nav-link" href="#Type_of_Proofs">Type of Proofs</a></li>
+        <li><a class="nav-link" href="#Definition">Definition</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+
+      <!-- -->
+
+      <section class="main-section" id="Mathematical_Statements">
+        <header>Mathematical Statements</header>
+        <p>Hello! All the information here comes from Ms. Pan's discrete math class.</p>
+        <p>In discrete math, we think of logic, the study of reasoning.</p>
+        <p>That sounds sophisticated and hard to approach, but worry not! This website will guide us through!</p>
+        <p>Let us start with a statement, also known as a proposition. In math, a statement is a sentence or a mathematical expression that is either true or false.</p>
+        <code>
+          <ul>For example:
+            <li>If a circle has a radius of r, its area is πr<sup>2</sup> (true)</li>
+            <li>The moon is made of cheese (false)</li>
+            <li>Some triangles are isosceles (true)</li>
+            <li>5 = 2 (false)</li>
+            <li>All triangles are isosceles (false)</li>
+          </ul>
+        </code>
+        <p>There can also be open sentences where the truth depends on one or more variables.</p>
+        <code>
+          <ul>For example:
+            <li>x + 1 = 2</li>
+            <li>The integer x is even</li>
+          </ul>
+        </code>
+      </section>
+
+      <!-- -->
+
+      <section class="main-section" id="Logical_Connectives">
+        <header>Logical Connectives</header>
+        <p>We can also combine statements using connectives such as “not”, “and”, “or”, “if… then”, and “if and only if”</p>
+        <p class="sub_header">Negation</p>
+        <p>To negate a statement, place the word “not” within the original statement.</p>
+        <p>The negation of the proposition p is denoted as ~p which reads “not p”</p>
+        <p>A statement and its negation have opposite truth values.</p>
+        <code>
+          <ul>For example:
+            <li>p: There are seven days in a week.</li>
+            <li>~p: There are <b>not</b> seven days in a week.</li>
+            <li>q: 9 + 10 = 21</li>
+            <li>~q: 9 + 10 <b>≠</b> 21</li>
+          </ul>
+        </code>
+        <table class="truth_table">
+          <caption>Truth Table of Negation</caption>
+          <thead>
+            <tr class="colored_row">
+              <th><span class="variable">p</span></th>
+              <th><span class="variable">~q</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T</td>
+              <td>F</td>
+            </tr>
+            <tr class="colored_row">
+              <td>F</td>
+              <td>T</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sub_header">Conjunction</p>
+        <p>The conjunction of proposition p and q is denoted as p⋀q, which reads “p and q”</p>
+        <p>A conjunction p⋀q is only true when both parts are true.</p>
+        <code>
+          <ul>For example:
+            <li>p: Bote does not enjoy art.</li>
+            <li>q: Luke is a Reddit moderator.</li>
+            <li>p⋀q: Bote does not enjoy art <b>and</b> luke is a Reddit moderator.</li>
+          </ul>        
+        </code>
+        <table class="truth_table">
+          <caption>Truth Table of Conjunction</caption>
+          <thead>
+            <tr class="colored_row">
+              <th><span class="variable">p</span></th>
+              <th><span class="variable">q</span></th>
+              <th><span class="variable">p∧q</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+            </tr>
+            <tr class="colored_row">
+              <td>T</td>
+              <td>F</td>
+              <td>F</td>
+            </tr>
+            <tr >
+              <td>F</td>
+              <td>T</td>
+              <td>F</td>
+            </tr>
+            <tr class="colored_row">
+              <td>F</td>
+              <td>F</td>
+              <td>F</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sub_header">Disjunction</p>
+        <p>The disjunction of two proposition p and q is denoted as p⋁q, which reads “p or q”</p>
+        <p>A disjunction p⋁q is true when any part of the compound statement is true.</p>
+        <code>
+          <ul>For example:
+            <li>p: Omar has awesome hair.</li>
+            <li>q: Victor can wash pots.</li>
+            <li>p⋁q: Omar has awesome hair <b>or</b> Victor can wash pots.</li>
+          </ul>
+        </code>
+        <table class="truth_table">
+          <caption>Truth Table of Disjunction</caption>
+          <thead>
+            <tr class="colored_row">
+              <th><span class="variable">p</span></th>
+              <th><span class="variable">q</span></th>
+              <th><span class="variable">p⋁q</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+            </tr>
+            <tr class="colored_row">
+              <td>T</td>
+              <td>F</td>
+              <td>T</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>T</td>
+              <td>T</td>
+            </tr>
+            <tr class="colored_row">
+              <td>F</td>
+              <td>F</td>
+              <td>F</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sub_header">Conditional</p>
+        <p>A compound statement formed by using the words "if… then" is denoted as p→q. which reads “if p, then q” or “p implies q”</p>
+        <p>In the case of p implies q, p is the assumption, and q is the conclusion.</p>
+        <p>p implies q is false only when a true assumption results in a false conclusion.</p>
+        <code>
+          <ul>For example:
+            <li>p: It is gloomy outside.</li>
+            <li>q: I am emo.</li>
+            <li>p→q: <b>If</b> it is gloomy outside <b>then</b> I am emo.</li>
+          </ul>
+        </code>
+        <table class="truth_table">
+          <caption>Truth Table of Conditional</caption>
+          <thead>
+            <tr class="colored_row">
+              <th><span class="variable">p</span></th>
+              <th><span class="variable">q</span></th>
+              <th><span class="variable">p→q</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+            </tr>
+            <tr class="colored_row">
+              <td>T</td>
+              <td>F</td>
+              <td>T</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>T</td>
+              <td>F</td>
+            </tr>
+            <tr class="colored_row">
+              <td>F</td>
+              <td>F</td>
+              <td>T</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sub_header">Biconditional</p>
+        <p>A compound statement formed by combining p→q and q→p under conjunction.</p>
+        <p>Denoted as p↔q, which reads “p if and only if q”</p>
+        <P>The biconditional is true when both p and q are true or false.</p>
+        <code>
+          <ul>For example:
+            <li>p: I am rich</li>
+            <li>q: I have money</li>
+            <li>p↔q: I am rich <b>if and only if</b> I have money.</li>
+          </ul>
+        </code>
+        <table class="truth_table">
+          <caption>Truth Table of Biconditional</caption>
+          <thead>
+            <tr class="colored_row">
+              <th><span class="variable">p</span></th>
+              <th><span class="variable">q</span></th>
+              <th><span class="variable">p→q</span></th>
+              <th><span class="variable">q→p</span></th>
+              <th><span class="variable">p↔q</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+            </tr>
+            <tr class="colored_row">
+              <td>T</td>
+              <td>F</td>
+              <td>T</td>
+              <td>F</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>T</td>
+              <td>F</td>
+              <td>T</td>
+              <td>F</td>
+            </tr>
+            <tr class="colored_row">
+              <td>F</td>
+              <td>F</td>
+              <td>T</td>
+              <td>T</td>
+              <td>T</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- -->
+
+      <section class="main-section" id="Inverse_Converse_Contrapositive_and_Negation">
+        <header>Inverse Converse Contrapositive and Negation</header>
+        <p>A conditional is written as such p→q.</p>
+        <p>Inverse of a conditional is written as such ~p→~q.</p>
+        <p>Converse of a conditional s written as such q→p.</p>
+        <p>Contrapositive of a conditional is a mix of inverse and converse and is written as <b>~q→~p</b>.</p>
+        <p>Contrapositive is logically equivalent to conditional.</p>
+        <p>Negation of conjunction p∧q is <b>~p⋁~q</b>.</p>
+        <p>Negation of disjunction p⋁q is <b>~p∧~q</b>.</p>
+        <p>Negation of conditional p→q is <b>p∧~q</b>.</p>
+        <p>Negation of biconditional p↔q is <b>(p⋀~q)⋁(q⋀~p)</b>.</p>
+        <p>You can find out whether or not each statement is true by making your truth tables.</p>
+        <p>With this knowledge, we’ll be able to use them in proofs by manipulating the original statements in the next chapter.</p>
+      </section>
+
+      <!-- -->
+
+      <section class="main-section" id="Type_of_Proofs">
+        <header>Type of Proofs</header>
+        <p>Direct Proof: proving something directly from known facts by simply stringing the known results together or performing correct mathematical manipulations to arrive at our conclusion</p> 
+        <p>Proof by Counterexample: providing an example that shows the statement is false</p>
+        <p>Proof by Cases: examining multiple cases to show the statement is true in all possible scenarios</p> 
+        <p>Proof by Contradiction/Indirect Proof: by proving the negation of the original statement to be false, it proves the original statement to be true</p>
+      </section>
+
+      <!-- -->
+
+      <section class="main-section" id="Definition">
+        <header>Definition</header>
+        <p>Below are the definitions we use in Ms. Pan's class.</p>
+        <p>DEF1.1: an integer n is even if n=2k for k∈ℤ</p>
+        <p>DEF1.2: an integer n if odd if n=2k±1 for k∈ℤ</p>
+        <p>DEF1.3: a natural number n is prime if it has two distinct positive divisors, 1 and n</p>
+        <p>FACTS: suppose a,b∈ℤ, then a±b∈ℤ, ab∈ℤ</p>
+        <p>DEF1.4: a real number x is rational if x=p/q for some p,q∈ℤ, q≠0</p>
+        <p>p/q is in lowest terms, p and q have no common factors</p>
+        <p>also, x is irrational if it is not rational, that if x≠p/q for every p,q∈ℤ, q≠0</p>
+        <p>DEF2.1: If N∈ℤ<sup>+</sup>, we can write N in expanded form (how we express every positive integer as a sum in terms of its digits)</p>
+        <p>if N=n<sub>k</sub>n<sub>k-1</sub>n<sub>k-2</sub>…n<sub>1</sub>n<sub>0</sub> (n are digits of N)</p>
+        <p>then N=10<sup>k</sup>n<sub>k</sub>+10<sup>k-1</sup>n<sub>k-1</sub>+…+10<sup>1</sup>n<sub>1</sub>+10<sup>0</sup>n<sub>0</sub></p>
+        <p>DEF2.2: Suppose a,b∈ℤ. We say that a divides b, written a|b, if b=ak for some k∈ℤ. In this case, we also say that a is a divisor of b and that b is a multiple of a</p>
+      </section>
+
+      <!-- -->
+
+    </main>
+  </body>
+</html>

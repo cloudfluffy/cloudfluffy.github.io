@@ -1,0 +1,68 @@
+body {
+  min-width: 500px;
+  max-width: 500px;
+  text-align: center;
+  font-family: Tahoma; 
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #353535;
+  color: white;
+}
+
+h1[id="title"], p[id="description"] {
+  text-align: center;
+}
+
+fieldset {
+  vertical-align: center;
+  border: none;
+  border-bottom: dashed;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+}
+
+form {
+  margin: auto;
+}
+  
+fieldset[id="4"] {
+  padding-top: 20px;
+}
+
+input[type="submit"] {
+  border: none;
+  width: 100px;
+}
+
+select {
+  border: none;
+}
+
+input[id="number"], input[id="email"], input[id="name"] {
+  width: 200px
+}
+
+.grade, .info, .feeling {
+  text-align: left;
+}
+
+.f {
+  text-align: left;
+}
+
+label[for="dropdown"] {
+  text-align: left;
+}

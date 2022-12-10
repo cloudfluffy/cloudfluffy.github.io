@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LaG! Survey Form</title>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- title & description -->
+    <h1 id="title">LaG! Survey Form</h1>
+    <p id="description">Welcome back to LaGuardia! It's another brand new year and we hope that you had a great respite from the summer. We're happy to hear our students' voice, please fill out this survey to give the school any inputs.</p>
+    <!-- form -->
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+      <!-- basic info -->
+      <fieldset id="1">
+        <label class="info" id="name-label" for="name">Name: <input id="name" type="text" placeholder="First and last name" required /></label>
+        <label class="info" id="email-label" for="email">Email: <input id="email" type="email" placeholder="Your personal email" required /></label>
+        <label class="info" id="number-label" for="number">Phone Number: <input id="number" type="number" placeholder="Your mobile phone number" min="10" max="10" /></label>
+      </fieldset>
+      <!-- form questions -->
+      <fieldset id="2">
+        <!-- major -->
+        <label for="dropdown">What is your Major?
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>Art</option>
+            <option>Vocal</option>
+            <option>Instrumental</option>
+            <option>Dance</option>
+            <option>Drama</option>
+            <option>Tech</option>
+          </select>
+        </label>
+        <!-- grade -->
+        <label class="grade" for="9"><input id="9" name="grade" type="radio" value="9" />Freshman</label>
+        <label class="grade" for="10"><input id="10" name="grade" type="radio" value="10" />Sophomore</label>
+        <label class="grade" for="11"><input id="11" name="grade" type="radio" value="11" />Junior</label>
+        <label class="grade" for="12"><input id="12" name="grade" type="radio" value="12" />Senior</label>
+      </fieldset>
+        <!-- input -->
+      <fieldset id="3">
+        <p class="f">How are you feeling?</p>
+        <label class="feeling"><input type="checkbox" value="stressed" />Stressed</label>
+        <label class="feeling"><input type="checkbox" value="excited" />Excited</label>
+        <label class="feeling"><input type="checkbox" value="bored" />Bored</label>
+        <label class="feeling"><input type="checkbox" value="other" />Other</label>
+      </fieldset>
+      <fieldset id="4">
+        <textarea placeholder="Your inputs here"></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

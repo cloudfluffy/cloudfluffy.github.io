@@ -1,0 +1,147 @@
+:root {
+    --color-white: white;
+    --row-color: #44514b;
+    --navbar-color: #0e373c;
+    --navbar-anchor-color: #69d2ff;
+    --background-color: #181f2e;
+    --header-color: #69d2ff;
+    --sub-header-color: #4293b6;
+    --text-color: #f1f1f1;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--color-white);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* for different screen size */
+@media (max-width: 680px) {
+    #navbar {
+        font-size: 0.7em;
+        width: 100px !important;
+    }
+    .main-section {
+        margin-left: 120px !important;
+        font-size: 0.9em;
+    }
+}
+
+
+/* main-section */
+p, code, caption {
+    color: var(--text-color);
+}
+
+b {
+    text-decoration: underline;
+}
+
+header {
+    font-size: 1.5em;
+}
+
+.sub_header {
+    font-size: 1.2em;
+    color: var(--sub-header-color) !important;
+}
+
+.main-section {
+    margin-left: min(22%, 185px);
+    margin-right: 1%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid;
+}
+
+.main-section header, .sub_header {
+    padding: 5px 0;
+    width: 100%;
+    color: var(--header-color);
+    text-decoration:underline ;
+}
+
+.sub_header {
+    text-decoration: none !important;
+}
+
+/* navbar */
+#navbar {
+    position: fixed;
+    background: var(--navbar-color);
+    color: var(--color-white);
+    display: flex;
+    height: 100%;
+    width: 21%;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    min-width: 110px;
+    max-width: 175px;
+}
+
+#navbar ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar ul li {
+    text-align: center;
+}
+
+#navbar header {
+    text-align: center;
+    padding: 25px 0 25px 0;
+    border-bottom: 2px solid;
+}
+
+#navbar a:link,a:visited {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: var(--navbar-anchor-color);
+}
+
+/* Truth Table */
+.truth_table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 50em;
+    margin-top: 1em;
+}
+
+.truth_table caption {
+    padding-bottom: 5px;
+}
+
+.truth_table tr {
+    text-align: left;
+}
+
+.truth_table thead th {
+    font-size: 1.1em;
+}
+
+.truth_table td,th {
+    padding: 10px 15px;
+}
+
+.colored_row {
+    background-color: var(--row-color);
+}
