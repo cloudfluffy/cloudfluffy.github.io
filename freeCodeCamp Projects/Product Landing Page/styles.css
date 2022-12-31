@@ -1,0 +1,190 @@
+:root {
+  --background-color: rgb(255, 255, 255);
+  --main-blue: rgb(0, 76, 153);
+  --main-yellow: rgb(236, 214, 16);
+  --bubble: rgba(0, 0, 0, 0.413);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(rgb(0, 0, 0), var(--main-blue));
+}
+
+/* Navbar */
+
+#header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 100%;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: var(--main-yellow);
+  padding: 0 0 0 5%;
+}
+
+#header-img {
+  height: 90%;
+  width: 150px;
+  object-fit: contain;
+}
+
+#nav-bar {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  padding: 10px;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: var(--main-blue);
+}
+
+.nav-link:hover {
+  color: rgb(0, 136, 255);
+}
+
+/* Main */
+
+#product-image {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+/* Features */
+
+#features {
+  margin: 80px 0;
+  padding: 0 2%;
+}
+
+#features ul {
+  list-style: none;
+}
+
+#features li {
+  margin-bottom: 80px;
+  padding: 2%;
+  background: var(--bubble);
+  border-radius: 25px;
+  text-align: center;
+}
+
+#icons, #feature-name {
+  margin-bottom: 20px;
+}
+
+#features p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+}
+
+#icons, #feature-name {
+  color: white;
+}
+
+/* Video */
+
+#video {
+  width: 100%;
+  aspect-ratio: 560 / 315; 
+}
+
+/* Buy Now! */
+
+#form {
+  background-color: var(--bubble);
+  margin: 20px 2%;
+  border-radius: 25px;
+  text-align: center;
+  padding: 2%;
+}
+
+#form p, #form h1 {
+  padding-bottom: 25px;
+  color: white;
+}
+
+#email {
+  width: 300px;
+  height: 25px;
+  border: 0;
+  border-radius: 25px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 80px;
+  border: 0;
+  height: 25px;
+  border-radius: 25px;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--main-yellow);
+  height: 10vh;
+  width: 100%;
+  padding: 0 0 0 5%;
+}
+
+#footer-img {
+  height: 80%;
+  width: 150px;
+  object-fit: contain;
+  padding-top: 8px;
+}
+
+footer p {
+  float: right;
+  padding-top: 40px;
+  padding-right: 10px;
+  color: var(--main-blue)
+}
+
+/* Fonts */
+
+.nav-link {
+  font-family: Impact;
+}
+
+#feature-name {
+  font-family: Optima;
+}
+
+p {
+  font-family: "Gill Sans";
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  #header-img {
+    width: 130px;
+  }
+  #features p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  #header-img {
+    width: 100px;
+  }
+}
