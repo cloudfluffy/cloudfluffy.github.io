@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .survey {
+    content:url(https://drive.google.com/uc?export=view&id=1MCY2NOmPiGhFpK4eRhjHVqr_7pSPL1aD);
+    width: 400px;
+  }
+  .tribute {
+    content:url(https://drive.google.com/uc?export=view&id=1LnDLGbpjwuEdJTnoxG3D9dqbPyrwT2J-);
+    width: 400px;
+  }
+  .technical {
+    content:url(https://drive.google.com/uc?export=view&id=1X-HAbzfwSRCpOx0NT77GhvQfprYi-bam);
+    width: 400px;
+  }
+  .product {
+    content:url(https://drive.google.com/uc?export=view&id=1EV4rX05d_NiMF9Vpyu21eU5DjjpDxoX2);
+    width: 400px;
+  }
+}
