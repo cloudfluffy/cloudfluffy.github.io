@@ -1,24 +1,219 @@
+:root {
+  --main-blue: #daf7dc;
+  --main-deep-blue: #336699;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  padding: 0 50px;
+  background-color: var(--main-deep-blue);
+  color: var(--main-blue);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999;
+}
+
+#navbar a {
+  font-family: 'Lucida Grande';
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--main-blue);
+  padding: 0 10px;
+  height: 100%;
+  width: calc(8em + 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar a:hover {
+  background-color: #06254d;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background: #2f4858;
+  color: var(--main-blue);
+  padding-top: 45vh;
+}
+
+#welcome-text {
+  width: fit-content;
+  font-family: 'Lucida Grande';
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+p#welcome-text {
+  font-size: 1.2rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+/* My Projects */
+
+#projects {
+  padding: 10vh 0;
+  background: linear-gradient(#06254d 10%,#244a70)
+}
+
+#projects h1 {
+  text-align: center;
+  font-family: 'Lucida Grande';
+  font-size: 2.5em;
+  color: #daf7dc;
+}
+
+#projects p {
+  margin-top: 10px;
+  text-align: center;
+  color: #daf7dc;
+  font-family: 'Lucida Grande';
+}
+
+.project-tile {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  aspect-ratio: 2828 / 1328;
+  margin: 50px 5%;
+}
+
+.project-tile img, .project-title {
+  position: absolute;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 2828 / 1328;
+  border: solid;
+  border-radius: 10px;
+}
+
+.project-title {
+  font-family: 'Lucida Grande';
+  text-decoration: none;
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.715);
+  width: 100%;
+  height: 60px;
+  padding-top: 12px;
+  left: 50%;
+  top: 50%;
+  margin-top: -30px;
+  margin-left: calc(-100% / 2);
+}
+
+.project-title:hover {
+  color: #9fe2ff;
+  background-color: rgba(0, 0, 0, 0.923);
+}
+
+/* profile */
+
+#profile {
+  padding: 10vh 0;
+  height: 100vh;
+  text-align: center;
+  background-color: #212223;
+  color: #c2dbe1;
+  padding-top: 30vh;
+}
+
+#profile h1 {
+  margin-bottom: 10px;
+  font-size: 3em;
+  font-family: 'Lucida Grande';
+}
+
+#profile p {
+  font-family: 'Lucida Grande';
+}
+
+#profile i {
+  font-size: 8em;
+  color: white;
+  margin-top: 25px;
+}
+
+#profile i:hover {
+  color: var(--main-deep-blue);
+}
+
+/* footer */
+
+footer {
+  height: 10vh;
+  background-color: var(--main-deep-blue);
+  color: var(--main-blue)
+}
+
+@media (max-width: 560px) {
   .survey {
-    content:url(https://drive.google.com/uc?export=view&id=1MCY2NOmPiGhFpK4eRhjHVqr_7pSPL1aD);
-    width: 400px;
+    content:url(https://github.com/cloudfluffy/cloudfluffy.github.io/blob/main/freeCodeCamp%20Projects/Personal%20Portfolio%20Webpage/img/Small%20Screen%20Size/Survey%20Form%20Screenshot%20Small.png?raw=true);
   }
+
   .tribute {
-    content:url(https://drive.google.com/uc?export=view&id=1LnDLGbpjwuEdJTnoxG3D9dqbPyrwT2J-);
-    width: 400px;
+    content:url(https://github.com/cloudfluffy/cloudfluffy.github.io/blob/main/freeCodeCamp%20Projects/Personal%20Portfolio%20Webpage/img/Small%20Screen%20Size/Tribute%20Page%20Screenshot%20Small.png?raw=true);
   }
+
   .technical {
-    content:url(https://drive.google.com/uc?export=view&id=1X-HAbzfwSRCpOx0NT77GhvQfprYi-bam);
-    width: 400px;
+    content:url(https://github.com/cloudfluffy/cloudfluffy.github.io/blob/main/freeCodeCamp%20Projects/Personal%20Portfolio%20Webpage/img/Small%20Screen%20Size/Technical%20Documentation%20Page%20Screenshot%20Small.png?raw=true);
   }
+
   .product {
-    content:url(https://drive.google.com/uc?export=view&id=1EV4rX05d_NiMF9Vpyu21eU5DjjpDxoX2);
-    width: 400px;
+    content:url(https://github.com/cloudfluffy/cloudfluffy.github.io/blob/main/freeCodeCamp%20Projects/Personal%20Portfolio%20Webpage/img/Small%20Screen%20Size/Product%20Landing%20Page%20Screenshot%20Small.png?raw=true);
+  }
+
+  .project-tile {
+    aspect-ratio: 956 / 1300;
+  }
+
+  .project-title {
+    font-size: 1.2em;
+    padding-top: 18px;
+  }
+
+  #navbar {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  #navbar a {
+    font-size: 1.1em;
+  }
+
+  #welcome-text {
+    font-size: 2rem;
+  }
+  
+  p#welcome-text {
+    font-size: 1rem;
+  }
+  
+  .name {
+    font-size: 2.5rem;
   }
 }
